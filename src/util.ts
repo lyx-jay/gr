@@ -10,3 +10,4 @@ export function logMulLine(data: string[], column: number): void {
     console.log(colors.brightBlue(outputString))
   }
 }
+
