@@ -1,6 +1,20 @@
 {
-  "name": "gr",
+  "name": "@lyxjay/gr",
   "version": "1.0.0",
+  "keywords": [
+    "cli",
+    "typescript",
+    "repo"
+  ],
+  "files": [
+    "package.json",
+    "README.md",
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lyx-jay/gr.git"
+  },
   "description": "a cli tool to get your github repos",
   "main": "index.js",
   "bin": {
@@ -9,10 +23,9 @@
   },
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/r.ts",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "b": "rm -rf lib & tsc --build"
+    "build": "rm -rf lib & tsc --build"
   },
-  "author": "",
+  "author": "lyx-jay",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.26.1",
@@ -21,7 +34,6 @@
   },
   "devDependencies": {
     "@types/node": "^17.0.25",
-    "ts-node-dev": "^1.1.8",
     "typescript": "^4.6.3"
   }
 }
